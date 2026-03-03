@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function App() {
   return (
     <div
@@ -19,7 +20,7 @@ export default function App() {
         }}
       >
         <h3 style={{ textAlign: "center", marginBottom: "15px" }}>
-          Login Form
+          Sign In
         </h3>
 
         <label htmlFor="username">Username</label>
@@ -77,7 +78,9 @@ export default function App() {
             cursor: "pointer",
           }}
         >
-          Sign Up
+           <Link href="/signup" style={{
+                textDecoration: 'none'
+            }}> Sign UP</Link>
         </button>
       </form>
     </div>
